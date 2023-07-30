@@ -195,7 +195,7 @@ async function userOngRoutes(app2) {
 // src/server.ts
 var import_cors = __toESM(require("@fastify/cors"));
 app.register(import_cors.default, {
-  origin: "https://betheherohome.netlify.app",
+  origin: true,
   credentials: true
   // Habilita o envio de cookies
 });
