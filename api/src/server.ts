@@ -4,7 +4,7 @@ import { userOngRoutes } from "./routes/route";
 import cors from "@fastify/cors";
 
 app.register(cors, {
-  origin: "https://betheherohome.netlify.app",
+  origin: true,
   credentials: true, // Habilita o envio de cookies
 });
 
