@@ -6,7 +6,7 @@ import cookie from "@fastify/cookie";
 export const app = fastify();
 
 app.register(cors, {
-  origin: true,
+  origin: "https://main--harmonious-moonbeam-fdc447.netlify.app/",
   credentials: true, // Habilita o envio de cookies
 });
 
