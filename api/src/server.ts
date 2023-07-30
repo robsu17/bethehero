@@ -11,10 +11,8 @@ app.register(cors, {
 app.register(cookie);
 app.register(userOngRoutes);
 
-app
-  .listen({
-    port: 3333,
-  })
-  .then(() => {
-    console.log("🚀 HTTP Server running");
-  });
+const port = process.env.PORT || 3333;
+
+app.listen(port, () => {
+  console.log(`🚀 HTTP Server running on port ${port}`);
+});
